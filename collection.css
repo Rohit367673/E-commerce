@@ -1,0 +1,69 @@
+#main-2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 1rem;
+}
+.main-m {
+  width: 70%;
+  height: 100%;
+
+  margin-left: 9px;
+  margin-top: 17px;
+  margin-bottom: 5px;
+
+  margin-bottom: 17px;
+}
+.main-s {
+  width: 30%;
+  height: 32.8rem;
+  border: 1px solid #fff;
+  margin-right: 6px;
+  margin-top: 18px;
+  box-shadow: 0px -1px 4px 1px;
+  margin-bottom: 17px;
+  border-radius: 10px;
+}
+
+.card-items-c {
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 219px;
+  box-shadow: 0px -1px 4px 1px;
+  margin: 4px;
+  border-radius: 10px;
+}
+.card-items-c img {
+  height: 113px;
+  width: 153px;
+  /* margin: 4px; */
+  padding: 1rem 2rem;
+}
+
+.main-s p {
+  justify-content: center;
+  display: flex;
+  font-weight: 800;
+  font-size: 3vw;
+  text-transform: capitalize;
+  background-color: #172337;
+  color: white;
+  border-radius: 10px;
+}
+#Add-cart-c{
+  margin: 10px 52px;
+  height: 35px;
+  width: 115px;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 19px;
+  cursor: pointer;
+  font-size: medium;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  animation: ease-in-out 0.3s;
+  box-shadow: 2px 4px 1px black;
+  font-weight: 600;
+  margin-bottom: 12px;
+
+}

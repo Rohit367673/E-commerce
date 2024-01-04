@@ -1,0 +1,39 @@
+.center-flex {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+.btn {
+  padding: 5px 30px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  margin-top: 18px;
+  height: 40px;
+  font-size: medium;
+  margin-left: 95px;
+}
+
+.btn:hover {
+  font-weight: bolder;
+}
+.btn a {
+  text-decoration: none;
+  color: white;
+  font-size: medium;
+}
+.my-2 {
+  margin: 20px 0;
+}
+.my-1 {
+  margin: 2px 0;
+}
+
+.text-center {
+  text-align: center;
+  margin: 4px;
+}

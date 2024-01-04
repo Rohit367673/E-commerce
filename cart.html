@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Cart Option</title>
+    <style>
+        /* Your CSS styles go here */
+    </style>
+    <script src=""></script>
+</head>
+<body>
+    <h1>E-commerce Cart</h1>
+    <div id="products">
+        <!-- Product cards go here -->
+        <div class="product">
+            <h2>Product 1</h2>
+            <p>Price: $10</p>
+            <button onclick="addToCart('Product 1', 10)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <h2>Product 2</h2>
+            <p>Price: $20</p>
+            <button onclick="addToCart('Product 2', 20)">Add to Cart</button>
+        </div>
+        <!-- Add more product cards as needed -->
+    </div>
+    <div id="cart">
+        <h2>Cart</h2>
+        <ul id="cart-items">
+            <!-- Cart items will be displayed here -->
+        </ul>
+        <p>Total: <span id="cart-total">$0</span></p>
+    </div>
+
+    <script>
+        // Your JavaScript code goes here
+        let cartItems = [];
+        let cartTotal = 0;
+
+        function addToCart(productName, price) {
+            cartItems.push({ name: productName, price: price });
+            cartTotal += price;
+            updateCart();
+        }
+
+        function updateCart() {
+            const cartItemsElement = document.getElementById("cart-items");
+            const cartTotalElement = document.getElementById("cart-total");
+
+            cartItemsElement.innerHTML = "";
+            cartTotalElement.textContent = "$" + cartTotal;
+
+            cartItems.forEach(item => {
+                const li = document.createElement("li");
+                li.textContent = `${item.name} - $${item.price}`;
+                cartItemsElement.appendChild(li);
+            });
+        }
+    </script>
+</body>
+</html
